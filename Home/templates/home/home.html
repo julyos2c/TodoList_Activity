@@ -1,7 +1,43 @@
 {% extends 'Home/base.html' %}
 
-{% block title %} Home {% endblock %}
+{% block title %}Posts{% endblock %}
 
 {% block content %}
-<h1 class="text-center">Hello IRISH</h1>
+
+<h2 class="mb-4">📄 Posts from API (Read Only)</h2>
+
+<div class="row">
+
+    <!-- Loop through API data -->
+    {% for post in posts %}
+
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm h-100">
+
+            <div class="card-body">
+
+                <!-- Title -->
+                <h5 class="card-title">
+                    {{ post.title }}
+                </h5>
+
+                <!-- Body -->
+                <p class="card-text text-muted">
+                    {{ post.body }}
+                </p>
+
+                <!-- Post ID -->
+                <small class="text-secondary">
+                    Post ID: {{ post.id }}
+                </small>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
 {% endblock %}
