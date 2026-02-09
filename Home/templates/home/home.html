@@ -8,7 +8,6 @@
 
 <div class="row">
 
-    <!-- Loop through API data -->
     {% for post in posts %}
 
     <div class="col-md-6 mb-3">
@@ -16,17 +15,14 @@
 
             <div class="card-body">
 
-                <!-- Title -->
                 <h5 class="card-title">
                     {{ post.title }}
                 </h5>
 
-                <!-- Body -->
                 <p class="card-text text-muted">
                     {{ post.body }}
                 </p>
 
-                <!-- Post ID -->
                 <small class="text-secondary">
                     Post ID: {{ post.id }}
                 </small>

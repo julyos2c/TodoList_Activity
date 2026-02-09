@@ -3,6 +3,175 @@
 {% block title %}About{% endblock %}
 
 {% block content %}
-<h1>ℹ️ About Page</h1>
-<p>This project is built using Django + Bootstrap.</p>
+
+<div class="container my-5">
+
+    <!-- =========================
+            PAGE HEADER
+    ========================= -->
+    <div class="text-center mb-4">
+        <h1 class="fw-bold">About TodoList System</h1>
+        <p class="text-muted">Django + Bootstrap + API Learning Project</p>
+    </div>
+
+    <!-- =========================
+            BIG MAIN CARD
+    ========================= -->
+    <div class="card shadow-lg mb-5">
+        <div class="card-body p-5">
+
+            <h3 class="fw-bold mb-3">📘 Project Overview</h3>
+
+            <p class="text-muted">
+                The TodoList System is a simple web application developed using
+                <strong>Django Framework</strong> and <strong>Bootstrap 5</strong>.
+                It demonstrates how authentication, API integration, and template rendering
+                work together following the MVC architecture.
+            </p>
+
+            <p class="text-muted">
+                This project is designed for students to understand:
+            </p>
+
+            <ul>
+                <li>User Login and Registration</li>
+                <li>Protected pages using @login_required</li>
+                <li>Fetching data from an external API</li>
+                <li>Displaying dynamic content using templates</li>
+                <li>Clean responsive UI using Bootstrap</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- =========================
+            3 FEATURE CARDS
+    ========================= -->
+    <div class="row g-4 mb-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>🔐</h2>
+                    <h5 class="fw-bold">Authentication</h5>
+                    <p class="text-muted">
+                        Secure login and registration system using
+                        Django built-in authentication.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>🌐</h2>
+                    <h5 class="fw-bold">API Integration</h5>
+                    <p class="text-muted">
+                        Fetches posts dynamically from JSONPlaceholder
+                        API without using a local database.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>🎨</h2>
+                    <h5 class="fw-bold">Modern UI</h5>
+                    <p class="text-muted">
+                        Responsive layout using Bootstrap cards,
+                        navbar, and grid system.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =========================
+            6 ADDITIONAL CARDS
+    ========================= -->
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>⚡</h2>
+                    <h5 class="fw-bold">Fast</h5>
+                    <p class="text-muted">
+                        Quick data retrieval from API and responsive interface.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>🛠️</h2>
+                    <h5 class="fw-bold">Easy Maintenance</h5>
+                    <p class="text-muted">
+                        Modular Django structure allows easy updates and improvements.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>📊</h2>
+                    <h5 class="fw-bold">Data Display</h5>
+                    <p class="text-muted">
+                        Shows API posts dynamically in a clean card layout.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>🔎</h2>
+                    <h5 class="fw-bold">User Friendly</h5>
+                    <p class="text-muted">
+                        Intuitive interface suitable for students and beginners.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>💾</h2>
+                    <h5 class="fw-bold">Lightweight</h5>
+                    <p class="text-muted">
+                        No heavy database needed, uses external API for demo purposes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center p-3">
+                <div class="card-body">
+                    <h2>📱</h2>
+                    <h5 class="fw-bold">Responsive</h5>
+                    <p class="text-muted">
+                        Works perfectly on desktop, tablet, and mobile devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock %}

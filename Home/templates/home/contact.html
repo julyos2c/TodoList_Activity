@@ -3,6 +3,67 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-<h1>📞 Contact Page</h1>
-<p>Email: julius@example.com</p>
+
+<div class="container my-5">
+
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">📞 Contact Us</h1>
+        <p class="text-muted">We would love to hear from you! Send your inquiries below.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- CONTACT DETAILS -->
+        <div class="col-md-5">
+            <div class="card shadow-lg h-100">
+                <div class="card-header bg-primary text-white text-center">
+                    <h5 class="mb-0">Contact Details</h5>
+                </div>
+                <div class="card-body p-4">
+                    <p><strong>Name:</strong> Julius Jess Estose</p>
+                    <p><strong>Email:</strong> julslab@example.com</p>
+                    <p><strong>School:</strong> IT Department</p>
+                    <p><strong>Phone:</strong> +63 912 345 6789</p>
+                    <p><strong>Location:</strong> Danao, Bohol, Philippines</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEND INQUIRY FORM -->
+        <div class="col-md-7">
+            <div class="card shadow-lg h-100">
+                <div class="card-header bg-success text-white text-center">
+                    <h5 class="mb-0">Send Inquiry</h5>
+                </div>
+                <div class="card-body p-4">
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Your Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Type your message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
 {% endblock %}
